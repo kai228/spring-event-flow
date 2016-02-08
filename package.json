@@ -1,0 +1,37 @@
+{
+  "name": "spring-event-flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solidearth/spring-event-flow.git"
+  },
+  "author": "Ron Litzenberger <rlitzenberger@solidearth.com> (http://www.solidearth.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solidearth/spring-event-flow/issues"
+  },
+  "homepage": "https://github.com/solidearth/spring-event-flow",
+  "dependencies": {
+    "async": "^0.9.0",
+    "gm": "^1.17.0",
+    "gridfs-locks": "0.0.5",
+    "jjv": "^1.0.2",
+    "log4js": "^0.6.22",
+    "mime": "^1.3.4",
+    "moment": "^2.10.2",
+    "mongodb": "1.4.29",
+    "node-uuid": "^1.4.3",
+    "nodemailer": "^1.4.0",
+    "optimist": "^0.6.1",
+    "private-repo": "git+ssh://git@github.com:solidearth/fertilizer.git",
+    "redis": "^2.4.2",
+    "seneca": "^1.0.0",
+    "seneca-wflow": "0.0.13",
+    "underscore": "^1.8.3"
+  }
+}

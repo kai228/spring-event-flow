@@ -1,0 +1,26 @@
+{
+    "staging": {
+      "mongo_connection": "mongodb://10.100.100.190,10.100.100.191/events?replicaSet=rsstage&w=1",
+      "mongo_options": {
+      "server": {
+        "auto_reconnect": true
+      }
+    },
+    "redis" : {
+    	"port":6379,
+    	"host" : "10.100.100.186"
+    }
+  },
+      "production": {
+      "mongo_connection": "mongodb://172.16.0.215,172.16.0.218/events?replicaSet=rsdata&w=1",
+      "mongo_options": {
+      "server": {
+        "auto_reconnect": true
+      }
+    },
+    "redis" : {
+    	"port":6379,
+    	"host" : "172.16.0.195"
+    }
+  }
+}
