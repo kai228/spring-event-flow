@@ -52,7 +52,7 @@ module.exports = function( options) {
 		//TODO use async.series
 		seneca.log.debug("-- start listings agg --");
 		eventClient.use("events",function(){
-			eventClient.getEvent(args.sys,args.startTime,args.endTime,function(err,results) {
+			eventClient.notificationEvent(args.sys,args.startTime,args.endTime,function(err,results) {
 				if(err){return cb(err)}
 
 					cb(null,results);

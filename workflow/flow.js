@@ -54,7 +54,7 @@ module.exports = {
 			});	
 		},
 
-		publish :function(seneca,data,startTime,endTime,next){
+		notificationEvent :function(seneca,data,startTime,endTime,next){
 	
 			var pub = redis.createClient(seneca.options()['seneca-wflow'].redis.port, seneca.options()['seneca-wflow'].redis.host);
 			pub.on('error', function (err) {
@@ -85,7 +85,7 @@ module.exports = {
 
 		},
 		dbClose : function (seneca,next){
-			seneca.act({role : 'mongoDb', cmd : 'close'},function(err){
+			seneca.act({role : 'db', cmd : 'close'},function(err){
 			if (err) { return cb(err); }
 			next(null,null);
 			}

@@ -36,7 +36,7 @@ var config = fertilizer.config('config.json');
 config.argv=argv;
 config.filename ="./workflow/flow" // module 
 
-config.sequence = ['generateDateInit','getStart','getEvent','publish','dbClose'];
+config.sequence = ['generateDateInit','getStart','getEvent','notificationEvent','dbClose'];
 
 // flow
 // require plugins and initialize
