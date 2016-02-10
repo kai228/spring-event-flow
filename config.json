@@ -8,7 +8,7 @@
     },
     "redis" : {
     	"port":6379,
-    	"host" : "10.100.100.186"
+    	"host" : "localhost"
     }
   },
       "production": {
@@ -20,7 +20,7 @@
     },
     "redis" : {
     	"port":6379,
-    	"host" : "172.16.0.195"
+    	"host" : "localhost"
     }
   }
 }
